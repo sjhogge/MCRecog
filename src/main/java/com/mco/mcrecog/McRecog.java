@@ -192,13 +192,14 @@ public class McRecog
         }
 
         // If player has unlocked the end achievement, shuffle words approx every 60s
-        if(event.player.getLevel() instanceof ServerLevel sl) {
-            var adv = sl.getServer().getServerResources().getAdvancements().getAdvancement(new ResourceLocation("minecraft:story/enter_the_end"));
-            if(event.player instanceof ServerPlayer sp) {
-                if(adv != null)
-                   endAdvDone = sp.getAdvancements().getOrStartProgress(adv).isDone();
-            }
-        }
+//        if(event.player.getLevel() instanceof ServerLevel sl) {
+//            var adv = sl.getServer().getServerResources().getAdvancements()
+//            var adv = sl.getServer().getServerResources().getAdvancements().getAdvancement(new ResourceLocation("minecraft:story/enter_the_end"));
+//            if(event.player instanceof ServerPlayer sp) {
+//                if(adv != null)
+//                   endAdvDone = sp.getAdvancements().getOrStartProgress(adv).isDone();
+//            }
+//        }
 
         if (event.player instanceof LocalPlayer p) {
             // Update beneficence
